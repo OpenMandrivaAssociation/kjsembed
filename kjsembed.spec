@@ -15,6 +15,8 @@ BuildRequires: qmake5
 BuildRequires: cmake
 BuildRequires: extra-cmake-modules5
 BuildRequires: cmake(KF5JS)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5DocTools)
 BuildRequires: pkgconfig(Qt5Core)
 Requires: %{libname} = %{EVRD}
