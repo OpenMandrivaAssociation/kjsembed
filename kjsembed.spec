@@ -4,9 +4,9 @@
 %define debug_package %{nil}
 
 Name: kjsembed
-Version: 4.99.0
-Release: 3
-Source0: http://ftp5.gwdg.de/pub/linux/kde/unstable/frameworks/portingAids/%{version}/%{name}-%{version}.tar.xz
+Version: 5.0.0
+Release: 1
+Source0: http://ftp5.gwdg.de/pub/linux/kde/stable/frameworks/portingAids/%{version}/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 JavaScript Embedding library
 URL: http://kde.org/
 License: LGPL v2.1
@@ -52,8 +52,9 @@ Development files (Headers etc.) for %{name}.
 %makeinstall_std -C build
 mkdir -p %{buildroot}%{_libdir}/qt5
 mv %{buildroot}%{_prefix}/mkspecs %{buildroot}%{_libdir}/qt5
+%find_lang %{name}%{major}
 
-%files
+%files -f %{name}%{major}.lang
 %{_bindir}/*
 %{_mandir}/man1/kjscmd5.1*
 
