@@ -21,6 +21,7 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5Archive)
 BuildRequires: cmake(KF5DocTools)
 BuildRequires: pkgconfig(Qt5Core)
+BuildRequires: pkgconfig(Qt5UiTools)
 Requires: %{libname} = %{EVRD}
 
 %description
