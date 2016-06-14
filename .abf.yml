@@ -1,4 +1,2 @@
-removed_sources:
-  kjsembed-5.13.0.tar.xz: 3fe2c01d479d5b5893e0cbc8726c4761b054d0e5
 sources:
-  kjsembed-5.22.0.tar.xz: a96e632fdd0bbdfd5ed1aa95555595eb3c0ce812
+  kjsembed-5.23.0.tar.xz: 96e46d0c28c2295aae4251d12f545a3d8e70d63e
