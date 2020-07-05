@@ -5,7 +5,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Name: kjsembed
-Version: 5.71.0
+Version: 5.72.0
 Release: 1
 Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/portingAids/%{name}-%{version}.tar.xz
 Summary: The KDE Frameworks 5 JavaScript Embedding library
@@ -51,7 +51,7 @@ Development files (Headers etc.) for %{name}.
 %install
 %ninja_install -C build
 
-%find_lang %{name}%{major}
+%find_lang %{name}%{major} --all-name --with-man
 
 %files -f %{name}%{major}.lang
 %{_bindir}/*
